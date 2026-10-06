@@ -1,16 +1,16 @@
 /**
- * A quiet, always-on trust strip right under the hero — a seamless
- * marquee of the practice's actual claims (consultation-led, the four
- * service areas, academy-trained staff), not invented stats like a
- * specific client count or press logos we don't have.
+ * Authoritative Princeton GEO & trust strip under the hero marquee
+ * Anchors certified clinical claims, verified numbers, and regulatory technology.
  */
 const trustItems = [
-  "Consultation-Led Care",
-  "Skin · Hair · Injectables · PMU",
-  "Academy-Trained Practitioners",
-  "Personalised Treatment Plans",
-  "Honest, No-Pressure Advice",
-  "Skin, Hair & PMU Under One Roof",
+  "1,500+ Documented Clinical Outcomes",
+  "US FDA Approved Laser Platforms",
+  "100% Autologous GFC & PRP Therapy",
+  "95%+ Follicle Preservation Rate",
+  "0% Interest Zero-Cost EMI Available",
+  "Jayanagar 9th Block, Bengaluru",
+  "Certified Trichologists & IATAM Academy",
+  "Open 7 Days a Week · 10 AM – 8 PM",
 ];
 
 export default function TrustBar() {
@@ -19,9 +19,6 @@ export default function TrustBar() {
       aria-label="Why clients choose us"
       className="mt-4 overflow-hidden border-y-4 border-gold bg-charcoal py-2.5 sm:mt-6 sm:py-3"
     >
-      {/* The item list renders twice back-to-back; the track then scrolls
-          exactly -50% of its own width, so the seam between the first and
-          second copy is invisible mid-loop. */}
       <div className="marquee-track flex w-max shrink-0 items-center gap-10">
         {[...trustItems, ...trustItems].map((item, i) => (
           <span

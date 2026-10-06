@@ -1,0 +1,3 @@
+# Clinic Management System (CRM) - Private Internal Tool
+User-agent: *
+Disallow: /

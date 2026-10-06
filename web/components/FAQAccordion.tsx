@@ -4,44 +4,9 @@ import { useState, useId } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { DISCLAIMER } from "@/lib/constants";
+import { defaultFaqs, type FAQItem } from "@/lib/faqs";
 
-export interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-const defaultFaqs: FAQItem[] = [
-  {
-    question: "How do I book a consultation?",
-    answer:
-      "You can book a consultation through our contact form, which redirects to WhatsApp, or by messaging us directly on WhatsApp using the button found across the site.",
-  },
-  {
-    question: "How do I know which treatment is suitable for me?",
-    answer:
-      "Suitability is best discussed in a consultation, where a professional can review your concern, history and goals before recommending an approach.",
-  },
-  {
-    question: "Do I need a consultation before treatment?",
-    answer:
-      "Yes — a consultation is recommended before any treatment so that your suitability, goals and any questions can be properly discussed.",
-  },
-  {
-    question: "Are treatments available for both men and women?",
-    answer:
-      "Many of our treatments, including Laser Hair Removal, are offered for both men and women. Specific suitability is discussed per individual.",
-  },
-  {
-    question: "How long does a treatment take?",
-    answer:
-      "Duration varies by treatment and individual case. Your practitioner will give you a realistic estimate during your consultation.",
-  },
-  {
-    question: "What should I expect after treatment?",
-    answer:
-      "Aftercare guidance is specific to each treatment and will be explained clearly by your practitioner following your session.",
-  },
-];
+export type { FAQItem };
 
 export default function FAQAccordion({
   items = defaultFaqs,

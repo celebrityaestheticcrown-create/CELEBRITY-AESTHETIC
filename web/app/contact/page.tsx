@@ -14,11 +14,38 @@ import {
 import { Reveal } from "@/components/ui/Reveal";
 import DirectionalCard from "@/components/ui/DirectionalCard";
 
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import { getMedicalClinicSchema, getBreadcrumbSchema } from "@/lib/schema";
+
 export const metadata: Metadata = {
-  title: "Contact & Booking",
+  title: "Contact & Appointment Booking — Hair & Skin Clinic Bangalore",
   description:
-    "Book a consultation with Crown Celebrity Aesthetic. Complete the form to send your enquiry via WhatsApp.",
+    "Book a clinical consultation at Crown Celebrity Aesthetic in Jayanagar 9th Block, Bengaluru. Contact us via WhatsApp or appointment form. 0% EMI available.",
+  keywords: [
+    "Book appointment Crown Celebrity Aesthetic",
+    "clinic contact Jayanagar Bangalore",
+    "hair consultation Bangalore",
+    "skin doctor consultation Jayanagar 9th block",
+    "Crown Celebrity Aesthetic phone number",
+    "Crown Celebrity Aesthetic address",
+  ],
   alternates: { canonical: "/contact" },
+  openGraph: {
+    title: `Contact & Appointment Booking — ${SITE_NAME}`,
+    description:
+      "Connect with our certified trichologists and cosmetologists in Jayanagar 9th Block, Bengaluru. Instant WhatsApp dispatch & online booking.",
+    url: `${SITE_URL}/contact`,
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/clinic/clinic-consultation-room.jpg", alt: "Crown Celebrity Aesthetic Reception & Consultation Desk" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Book Appointment — ${SITE_NAME}`,
+    description: "Consultation-led clinical skin, hair & PMU treatments in Jayanagar, Bengaluru.",
+    images: ["/clinic/clinic-consultation-room.jpg"],
+  },
 };
 
 const quickHelp = [
@@ -88,8 +115,22 @@ export default async function ContactPage({
   searchParams: Promise<{ treatment?: string }>;
 }) {
   const params = await searchParams;
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Contact", url: "/contact" },
+  ]);
+  const clinicSchema = getMedicalClinicSchema();
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+      />
       <h1 className="sr-only">Contact &amp; Booking</h1>
 
       <ContactSection />

@@ -26,16 +26,15 @@ export default function AboutSection() {
             script="est. attention"
           />
           <Reveal>
-            <p className="mt-6 max-w-lg font-grotesk text-[17px] leading-relaxed text-charcoal/75">
-              Crown Celebrity Aesthetic brings together hair restoration,
-              hair transplant specialities, clinical skin care,
-              and certified PMU services within a single, premier consultation-led practice.
-              Every visit begins with an in-depth diagnostic assessment — understanding your
-              anatomy, your goals, and charting a tailored clinical path forward.
+            {/* AEO Inverted Pyramid Quotable Answer Block */}
+            <p className="mt-6 max-w-lg font-grotesk text-[17px] leading-relaxed text-charcoal/85">
+              Crown Celebrity Aesthetic is a premier consultation-led aesthetic clinic located in Jayanagar 9th Block, Bengaluru (Karnataka 560056) that provides autologous GFC &amp; PRP hair therapies, US FDA approved laser hair removal, and clinical medi-facials with 0% interest EMI options.
             </p>
             <p className="mt-4 max-w-lg font-grotesk text-[17px] leading-relaxed text-charcoal/75">
-              Alongside client treatments, our academy shares technique and
-              precision with the next generation of PMU professionals.
+              With over 1,500+ documented clinical transformations, our certified trichologists and licensed cosmetologists deliver 45-minute customized sessions with 95%+ follicle preservation, strict sterile surgical-grade operatory hygiene, and ongoing diagnostic tracking.
+            </p>
+            <p className="mt-4 max-w-lg font-grotesk text-[17px] leading-relaxed text-charcoal/75">
+              Alongside patient therapies, our IATAM Academy shares micro-pigmentation artistry and sterile techniques with the next generation of PMU professionals across India.
             </p>
 
             <div className="mt-8 divider-gold max-w-xs" />

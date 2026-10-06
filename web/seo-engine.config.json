@@ -1,0 +1,405 @@
+{
+  "domain": "https://crown-celebrity-aesthetic.com",
+  "outputDir": "public",
+  "excludePages": [
+    "header",
+    "footer",
+    "nav",
+    "partial",
+    "404",
+    "notfound",
+    "admin",
+    "handler",
+    "api",
+    "ajax",
+    "webhook",
+    "privacy",
+    "terms"
+  ],
+  "dynamicRoutes": [
+    "/treatments/advanced-gfc",
+    "/treatments/advanced-prp",
+    "/treatments/exosomes",
+    "/treatments/male-hair-transplant",
+    "/treatments/fue-hair-transplant",
+    "/treatments/chemical-peels",
+    "/treatments/vampire-facial",
+    "/treatments/mnrf",
+    "/treatments/post-pregnancy-stretch-mark-removal",
+    "/treatments/acne-treatment",
+    "/treatments/acne-scar-treatment",
+    "/treatments/scar-revision",
+    "/treatments/pigmentation-treatment",
+    "/treatments/melasma-treatment",
+    "/treatments/skin-lightening",
+    "/treatments/iv-glutathione",
+    "/treatments/under-eye-dark-circles",
+    "/treatments/underarm-pigmentation",
+    "/treatments/hydra-facial",
+    "/treatments/carbon-laser-facial",
+    "/treatments/bb-glow-facial",
+    "/treatments/laser-hair-removal",
+    "/treatments/botox",
+    "/treatments/fillers",
+    "/treatments/hifu-double-chin",
+    "/treatments/thread-lift",
+    "/treatments/mnrf-aesthetics",
+    "/treatments/carbon-laser-facial-aesthetics",
+    "/treatments/skin-rejuvenation",
+    "/treatments/lip-tinting",
+    "/treatments/eyebrow-microblading",
+    "/treatments/pmu-thread-lift",
+    "/treatments/smp-hair",
+    "/treatments/hair-patch",
+    "/treatments/dandruff-treatment",
+    "/treatments/hairfall-treatment"
+  ],
+  "pageImages": {
+    "/": [
+      {
+        "src": "/logo.jpg",
+        "alt": "Crown Celebrity Aesthetic logo - Hair, Skin & PMU Clinic Bangalore"
+      },
+      {
+        "src": "/clinic/clinic-about-treatment-room.jpg",
+        "alt": "State-of-the-art clinical treatment suite at Crown Celebrity Aesthetic Jayanagar Bangalore"
+      },
+      {
+        "src": "/clinic/clinic-wall-posters.jpg",
+        "alt": "Clinical treatment specialties wall posters: Acne, Pigmentation, Medi Facials and Laser Hair Removal"
+      },
+      {
+        "src": "/treatments/hair-pillar.jpg",
+        "alt": "Scalp and hair restoration clinic equipment at Crown Celebrity Aesthetic"
+      },
+      {
+        "src": "/treatments/skin-pillar.jpg",
+        "alt": "Skin care and clinical aesthetics treatment suite"
+      },
+      {
+        "src": "/treatments/pmu-pillar.jpg",
+        "alt": "Permanent makeup and cosmetic micropigmentation procedure room"
+      }
+    ],
+    "/about": [
+      {
+        "src": "/clinic/clinic-about-treatment-room.jpg",
+        "alt": "Modern clinical procedure room at Crown Celebrity Aesthetic"
+      },
+      {
+        "src": "/about/team-member-1.png",
+        "alt": "Naziya Baig - Cosmetologist & Trichologist at Crown Celebrity Aesthetic"
+      },
+      {
+        "src": "/about/team-member-2.jpeg",
+        "alt": "Reehal Baig - Managing Director at Crown Celebrity Aesthetic"
+      },
+      {
+        "src": "/clinic/clinic-consultation-room.jpg",
+        "alt": "Patient consultation and diagnostic suite at Crown Celebrity Aesthetic Jayanagar"
+      },
+      {
+        "src": "/clinic/clinic-corridor.jpg",
+        "alt": "Certified clinic corridor at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/treatments": [
+      {
+        "src": "/treatments/hair-pillar.jpg",
+        "alt": "Hair restoration treatments at Crown Celebrity Aesthetic"
+      },
+      {
+        "src": "/treatments/skin-pillar.jpg",
+        "alt": "Clinical dermatology and skin care treatments"
+      },
+      {
+        "src": "/treatments/aesthetics-pillar.jpg",
+        "alt": "Facial aesthetics and injectable treatments"
+      },
+      {
+        "src": "/treatments/pmu-pillar.jpg",
+        "alt": "Permanent makeup and aesthetic micropigmentation"
+      }
+    ],
+    "/pmu-services": [
+      {
+        "src": "/treatments/pmu-pillar.jpg",
+        "alt": "Permanent makeup precision clinic at Crown Celebrity Aesthetic"
+      },
+      {
+        "src": "/treatments/lip-tinting.jpg",
+        "alt": "Semi-permanent lip blush and tinting treatment"
+      },
+      {
+        "src": "/treatments/smp-hair.jpg",
+        "alt": "Scalp micropigmentation follicle replication procedure"
+      }
+    ],
+    "/academy": [
+      {
+        "src": "/clinic/clinic-consultation-room.jpg",
+        "alt": "IATAM Academy PMU training and certification suite in Bangalore"
+      }
+    ],
+    "/contact": [
+      {
+        "src": "/clinic/clinic-consultation-room.jpg",
+        "alt": "Crown Celebrity Aesthetic clinic reception and consultation desk"
+      },
+      {
+        "src": "/clinic/clinic-corridor.jpg",
+        "alt": "Crown Celebrity Aesthetic clinic entrance at 26th Main Rd Jayanagar"
+      }
+    ],
+    "/results": [
+      {
+        "src": "/clinic/clinic-procedure-suite.jpg",
+        "alt": "Clinical procedure results room at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/faq": [
+      {
+        "src": "/clinic/clinic-consultation-room.jpg",
+        "alt": "Consultation desk for patient questions at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/treatments/advanced-gfc": [
+      {
+        "src": "/treatments/advanced-gfc.jpg",
+        "alt": "GFC Growth Factor Concentrate scalp therapy"
+      }
+    ],
+    "/treatments/advanced-prp": [
+      {
+        "src": "/treatments/advanced-prp.jpg",
+        "alt": "PRP Platelet-Rich Plasma hair treatment being applied"
+      }
+    ],
+    "/treatments/exosomes": [
+      {
+        "src": "/treatments/exosomes.jpg",
+        "alt": "Exosome Hair Restoration Therapy procedure at Crown Celebrity Aesthetic Bangalore"
+      }
+    ],
+    "/treatments/male-hair-transplant": [
+      {
+        "src": "/treatments/male-hair-transplant.jpg",
+        "alt": "Male hair transplant precision hairline restoration"
+      }
+    ],
+    "/treatments/fue-hair-transplant": [
+      {
+        "src": "/treatments/fue-hair-transplant.jpg",
+        "alt": "FUE Hair Transplant procedure at Crown Celebrity Aesthetic Bangalore"
+      }
+    ],
+    "/treatments/chemical-peels": [
+      {
+        "src": "/treatments/chemical-peels.jpg",
+        "alt": "Chemical peel application for acne and skin renewal"
+      }
+    ],
+    "/treatments/vampire-facial": [
+      {
+        "src": "/treatments/vampire-facial.jpg",
+        "alt": "Vampire facial device treatment on the cheek"
+      }
+    ],
+    "/treatments/mnrf": [
+      {
+        "src": "/treatments/mnrf.jpg",
+        "alt": "MNRF \\u2014 Microneedling Radiofrequency procedure at Crown Celebrity Aesthetic Bangalore"
+      }
+    ],
+    "/treatments/post-pregnancy-stretch-mark-removal": [
+      {
+        "src": "/treatments/post-pregnancy-stretch-mark-removal.jpg",
+        "alt": "Post-pregnancy belly skin being cared for during stretch mark removal treatment"
+      }
+    ],
+    "/treatments/acne-treatment": [
+      {
+        "src": "/treatments/acne-treatment.jpg",
+        "alt": "Clinical acne treatment and dermatological evaluation"
+      }
+    ],
+    "/treatments/acne-scar-treatment": [
+      {
+        "src": "/treatments/acne-scar-treatment.jpg",
+        "alt": "No More Acne Scars clinical protocol poster at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/treatments/scar-revision": [
+      {
+        "src": "/treatments/scar-revision.jpg",
+        "alt": "Scar revision and texture remodeling"
+      }
+    ],
+    "/treatments/pigmentation-treatment": [
+      {
+        "src": "/treatments/pigmentation-treatment.jpg",
+        "alt": "No More Pigmentation clinical protocol poster at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/treatments/melasma-treatment": [
+      {
+        "src": "/treatments/melasma-treatment.jpg",
+        "alt": "Melasma treatment being applied to the cheek"
+      }
+    ],
+    "/treatments/skin-lightening": [
+      {
+        "src": "/treatments/skin-lightening.jpg",
+        "alt": "Skin lightening and radiant complexion glow"
+      }
+    ],
+    "/treatments/iv-glutathione": [
+      {
+        "src": "/treatments/iv-glutathione.jpg",
+        "alt": "IV glutathione antioxidant infusion"
+      }
+    ],
+    "/treatments/under-eye-dark-circles": [
+      {
+        "src": "/treatments/under-eye-dark-circles.jpg",
+        "alt": "Under-eye dark circles rejuvenation"
+      }
+    ],
+    "/treatments/underarm-pigmentation": [
+      {
+        "src": "/treatments/underarm-pigmentation.jpg",
+        "alt": "Underarm pigmentation correction"
+      }
+    ],
+    "/treatments/hydra-facial": [
+      {
+        "src": "/treatments/hydra-facial.jpg",
+        "alt": "HydraFacial featured on Medi Facials clinic poster at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/treatments/carbon-laser-facial": [
+      {
+        "src": "/treatments/carbon-laser-facial.jpg",
+        "alt": "Carbon laser facial with charcoal mask"
+      }
+    ],
+    "/treatments/bb-glow-facial": [
+      {
+        "src": "/treatments/bb-glow-facial.jpg",
+        "alt": "BB Glow radiance facial treatment"
+      }
+    ],
+    "/treatments/laser-hair-removal": [
+      {
+        "src": "/treatments/laser-hair-removal.jpg",
+        "alt": "No More Unwanted Hair USA FDA Approved laser hair removal poster at Crown Celebrity Aesthetic"
+      }
+    ],
+    "/treatments/botox": [
+      {
+        "src": "/treatments/botox.jpg",
+        "alt": "Botox & Dynamic Wrinkle Softening procedure at Crown Celebrity Aesthetic Bangalore"
+      }
+    ],
+    "/treatments/fillers": [
+      {
+        "src": "/treatments/fillers.jpg",
+        "alt": "Dermal Fillers (Lips, Cheeks & Jawline) procedure at Crown Celebrity Aesthetic Bangalore"
+      }
+    ],
+    "/treatments/hifu-double-chin": [
+      {
+        "src": "/treatments/hifu-double-chin.jpg",
+        "alt": "HIFU device treating the jawline and double chin"
+      }
+    ],
+    "/treatments/thread-lift": [
+      {
+        "src": "/treatments/thread-lift.jpg",
+        "alt": "Thread lift treatment markings on the face"
+      }
+    ],
+    "/treatments/mnrf-aesthetics": [
+      {
+        "src": "/treatments/mnrf-aesthetics.jpg",
+        "alt": "Radiofrequency skin tightening treatment"
+      }
+    ],
+    "/treatments/carbon-laser-facial-aesthetics": [
+      {
+        "src": "/treatments/carbon-laser-facial-aesthetics.jpg",
+        "alt": "Carbon laser facial treatment"
+      }
+    ],
+    "/treatments/skin-rejuvenation": [
+      {
+        "src": "/treatments/skin-rejuvenation.jpg",
+        "alt": "Laser skin rejuvenation treatment in progress"
+      }
+    ],
+    "/treatments/lip-tinting": [
+      {
+        "src": "/treatments/lip-tinting.jpg",
+        "alt": "Lip tinting pigment being applied"
+      }
+    ],
+    "/treatments/eyebrow-microblading": [
+      {
+        "src": "/treatments/eyebrow-microblading.jpg",
+        "alt": "Eyebrow Microblading procedure at Crown Celebrity Aesthetic Bangalore"
+      }
+    ],
+    "/treatments/pmu-thread-lift": [
+      {
+        "src": "/treatments/pmu-thread-lift.jpg",
+        "alt": "PDO thread lift needle being inserted near the brow and temple"
+      }
+    ],
+    "/treatments/smp-hair": [
+      {
+        "src": "/treatments/smp-hair.jpg",
+        "alt": "Scalp micropigmentation follicle replication"
+      }
+    ],
+    "/treatments/hair-patch": [
+      {
+        "src": "/treatments/hair-patch.jpg",
+        "alt": "Non-surgical hair patch result"
+      }
+    ],
+    "/treatments/dandruff-treatment": [
+      {
+        "src": "/treatments/dandruff-treatment.jpg",
+        "alt": "Scalp clinical dandruff detox treatment"
+      }
+    ],
+    "/treatments/hairfall-treatment": [
+      {
+        "src": "/treatments/hairfall-treatment.jpg",
+        "alt": "Hairfall diagnosis and clinical scalp treatment"
+      }
+    ]
+  },
+  "authorityTerms": [
+    "US FDA Approved",
+    "FDA Approved",
+    "IATAM",
+    "International Academy of Trichology & Aesthetic Medicine",
+    "Certified Trichologist",
+    "Licensed Cosmetologist",
+    "Autologous",
+    "Trichology",
+    "Sterile",
+    "No Cost EMI",
+    "Jayanagar",
+    "Bengaluru",
+    "Bangalore",
+    "Karnataka",
+    "ISO",
+    "Norwood Scale",
+    "Fitzpatrick",
+    "registered",
+    "certified",
+    "licensed"
+  ]
+}

@@ -26,10 +26,10 @@ export interface HeroBeat {
 export const HERO_BEATS: HeroBeat[] = [
   {
     range: [1, 10],
-    eyebrow: "Crown Celebrity Aesthetic · Hair & Skin Clinic · IATAM Academy",
-    headline: ["Refined care,"],
+    eyebrow: "Crown Celebrity Aesthetic · Hair & Skin Clinic · Jayanagar 9th Block, Bengaluru",
+    headline: ["Refined clinical care,"],
     script: "considered results.",
-    body: "A consultation-led approach to skin, hair and permanent makeup, brought together under one roof.",
+    body: "Crown Celebrity Aesthetic is a premier consultation-led clinic located in Jayanagar, Bengaluru providing autologous GFC & PRP hair therapies, US FDA approved laser treatments, and PMU with 0% interest EMI options.",
     ctas: true,
   },
   {

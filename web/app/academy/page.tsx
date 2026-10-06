@@ -6,58 +6,98 @@ import { Reveal, RevealItem, RevealStagger } from "@/components/ui/Reveal";
 import WordReveal from "@/components/ui/WordReveal";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { academyImage } from "@/lib/images";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import { getEducationalAcademySchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Academy",
+  title: "IATAM Academy — PMU & Clinical Aesthetic Training Bangalore",
   description:
-    "Crown Celebrity Aesthetic Academy focuses on PMU training, technique and professional development.",
+    "IATAM Academy at Crown Celebrity Aesthetic in Jayanagar, Bengaluru offers certified hands-on clinical training in Permanent Makeup (PMU), Eyebrow Microblading, Lip Blush, and SMP.",
+  keywords: [
+    "IATAM Academy Bangalore",
+    "PMU training Bangalore",
+    "microblading course Bangalore",
+    "permanent makeup certification Jayanagar",
+    "SMP course Bangalore",
+    "lip blushing training Bangalore",
+    "aesthetic training academy Karnataka",
+  ],
   alternates: { canonical: "/academy" },
+  openGraph: {
+    title: `IATAM Academy — PMU & Aesthetics Training Bangalore`,
+    description:
+      "Hands-on clinical training in permanent makeup, eyebrow microblading, and clinical scalp micropigmentation in Jayanagar 9th Block, Bengaluru.",
+    url: `${SITE_URL}/academy`,
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/clinic/clinic-consultation-room.jpg", alt: "IATAM Academy Training Suite Bangalore" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `IATAM Academy Bangalore — Aesthetic & PMU Certification`,
+    description: "Hands-on professional PMU, Microblading, and SMP certifications on live clinical models.",
+    images: ["/clinic/clinic-consultation-room.jpg"],
+  },
 };
 
 const focusAreas = [
   {
-    title: "Training",
-    text: "Structured, hands-on learning designed around real technique rather than theory alone.",
+    title: "Hands-On Clinical Practice",
+    text: "Structured learning designed around live patient models and real micro-pigmentation equipment rather than theory alone.",
   },
   {
-    title: "Technique",
-    text: "Close attention to tool handling, pigment work and precision across PMU disciplines.",
+    title: "Precision Micro-Pigment Technique",
+    text: "Rigorous training in machine speed calibration, needle depths, skin undertone matching, and sterile clinical operatory standards.",
   },
   {
-    title: "Professional Development",
-    text: "Guidance intended to support practitioners as they build their own practice.",
+    title: "Professional Accreditation",
+    text: "IATAM recognized certification equipping practitioners with business setup guidance, client consultation protocols, and portfolio building.",
   },
 ];
 
-const tbcFields = [
-  { label: "Course Fees", value: "To be confirmed" },
-  { label: "Duration", value: "To be confirmed" },
-  { label: "Certification", value: "To be confirmed" },
-  { label: "Placement Support", value: "To be confirmed" },
+const courseHighlights = [
+  { label: "Campus Location", value: "Jayanagar 9th Block, Bengaluru" },
+  { label: "Curriculum Focus", value: "PMU, Microblading, Lip Blush & SMP" },
+  { label: "Certification", value: "IATAM Certified Credential" },
+  { label: "Batch Format", value: "Small Intimate Batches (Hands-On)" },
 ];
 
 export default function AcademyPage() {
+  const academySchema = getEducationalAcademySchema();
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Academy", url: "/academy" },
+  ]);
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(academySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <section className="border-b border-gold/20 py-16 sm:py-24">
         <div className="mx-auto grid max-w-8xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
           <Reveal>
             <p className="font-grotesk text-[13px] font-semibold uppercase tracking-widest2 text-gold-dark">
-              Crown Celebrity Aesthetic Academy
+              IATAM Academy · Crown Celebrity Aesthetic
             </p>
             <h1 className="mt-3 font-display text-4xl font-bold uppercase leading-tight text-charcoal sm:text-5xl">
-              <WordReveal text="Training in precision PMU technique" />
+              <WordReveal text="Training in precision PMU & aesthetic artistry" />
             </h1>
             <p className="mt-6 max-w-lg font-grotesk text-[17px] leading-relaxed text-charcoal/75">
-              Our Academy is focused on sharing the technique and precision
-              behind our PMU services with practitioners building their own
-              craft.
+              The International Academy of Trichology & Aesthetic Medicine (IATAM) Academy in Bengaluru delivers masterclasses designed to empower future leaders in semi-permanent makeup, eyebrow microblading, and clinical aesthetics.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <ButtonLink href="/contact?treatment=General%20Consultation" variant="primary">
+              <ButtonLink href="/contact?treatment=IATAM%20Academy%20Course%20Enquiry" variant="primary">
                 Enquire About The Academy →
               </ButtonLink>
-              <WhatsAppButton />
+              <WhatsAppButton message="Hello Crown Celebrity Aesthetic, I would like to enquire about IATAM Academy certification courses." />
             </div>
           </Reveal>
           <Reveal>
@@ -73,7 +113,7 @@ export default function AcademyPage() {
 
       <section className="border-b border-gold/20 py-16 sm:py-24">
         <div className="mx-auto max-w-8xl px-5 sm:px-8">
-          <SectionHeading kicker="What We Focus On" title="Training built around three pillars" />
+          <SectionHeading kicker="Curriculum Pillars" title="Clinical training built around three pillars" />
           <RevealStagger className="mt-12 grid grid-cols-1 divide-y divide-gold/15 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
             {focusAreas.map((area) => (
               <RevealItem key={area.title} className="py-6 first:pt-0 sm:px-6 sm:py-0 sm:first:pl-0">
@@ -93,17 +133,17 @@ export default function AcademyPage() {
       <section className="py-16 sm:py-24">
         <div className="mx-auto max-w-8xl px-5 sm:px-8">
           <SectionHeading
-            kicker="Course Details"
-            title="Details being finalised"
-            description="The specifics below are not yet confirmed. Please reach out directly for the most current information."
+            kicker="Course Specifications"
+            title="Academy program overview"
+            description="Our courses in Jayanagar, Bengaluru blend theoretical dermatological hygiene with intensive live model clinical sessions."
           />
           <RevealStagger className="mt-12 grid grid-cols-1 gap-6 border-t border-gold/20 pt-10 sm:grid-cols-2 lg:grid-cols-4">
-            {tbcFields.map((field) => (
+            {courseHighlights.map((field) => (
               <RevealItem key={field.label} className="border-l-2 border-gold/40 pl-4">
                 <dt className="font-grotesk text-[13px] font-semibold uppercase tracking-widest2 text-charcoal/60">
                   {field.label}
                 </dt>
-                <dd className="mt-2 font-grotesk text-base italic text-charcoal/70">
+                <dd className="mt-2 font-grotesk text-base font-medium text-charcoal">
                   {field.value}
                 </dd>
               </RevealItem>
@@ -115,15 +155,14 @@ export default function AcademyPage() {
       <section className="border-t border-gold/20 bg-sage-dark py-16 sm:py-24">
         <Reveal className="mx-auto max-w-3xl px-5 text-center sm:px-8">
           <h2 className="font-display text-2xl font-bold uppercase text-ivory sm:text-3xl">
-            Interested in training with us?
+            Ready to master PMU & Aesthetic Medicine?
           </h2>
           <p className="mt-3 font-grotesk text-base text-ivory/80">
-            Get in touch and we will share the latest Academy information as
-            it becomes available.
+            Contact our admissions team today to request current syllabus modules, fee structures, and upcoming batch dates in Bangalore.
           </p>
           <div className="mt-8">
-            <ButtonLink href="/contact?treatment=General%20Consultation" variant="ivoryOnDark">
-              Enquire About The Academy →
+            <ButtonLink href="/contact?treatment=IATAM%20Academy%20Course%20Enquiry" variant="ivoryOnDark">
+              Request Course Brochure →
             </ButtonLink>
           </div>
         </Reveal>

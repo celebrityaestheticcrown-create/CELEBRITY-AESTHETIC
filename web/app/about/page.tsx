@@ -11,13 +11,40 @@ import CTASection from "@/components/CTASection";
 import { categoryImages, clinicSpaceImages, getTreatmentImage, interiorImage, teamPhotos } from "@/lib/images";
 import { getTreatmentBySlug } from "@/lib/treatments";
 
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import { getBreadcrumbSchema } from "@/lib/schema";
+
 const advancedTechImage = getTreatmentImage(getTreatmentBySlug("mnrf")!);
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Our Practice — Hair & Skin Clinic Bangalore",
   description:
-    "Learn about Crown Celebrity Aesthetic's consultation-led approach to skin, hair and PMU services.",
+    "Learn about Crown Celebrity Aesthetic in Jayanagar 9th Block, Bengaluru. Led by Cosmetologist & Trichologist Naziya Baig and MD Reehal Baig with US FDA approved clinical care.",
+  keywords: [
+    "About Crown Celebrity Aesthetic",
+    "Naziya Baig Trichologist",
+    "Reehal Baig Managing Director",
+    "hair clinic Jayanagar 9th Block",
+    "skin clinic Bangalore",
+    "IATAM Academy Bangalore",
+  ],
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: `About Our Practice — ${SITE_NAME}`,
+    description:
+      "A consultation-led aesthetic clinic in Jayanagar, Bengaluru blending trichology, dermatology, and PMU artistry.",
+    url: `${SITE_URL}/about`,
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/clinic/clinic-about-treatment-room.jpg", alt: "Crown Celebrity Aesthetic Treatment Suite" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About Us — ${SITE_NAME}`,
+    description: "Consultation-led clinical skin, hair & PMU practice in Jayanagar, Bengaluru.",
+    images: ["/clinic/clinic-about-treatment-room.jpg"],
+  },
 };
 
 const philosophySteps = [
@@ -75,8 +102,45 @@ const focusAreas = [
 ];
 
 export default function AboutPage() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "About", url: "/about" },
+  ]);
+
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Crown Celebrity Aesthetic",
+    description: "Consultation-led hair, skin, and PMU practice in Jayanagar 9th Block, Bengaluru.",
+    url: `${SITE_URL}/about`,
+    mainEntity: [
+      {
+        "@type": "Person",
+        name: "Naziya Baig",
+        jobTitle: "Cosmetologist & Trichologist",
+        worksFor: { "@id": `${SITE_URL}/#clinic` },
+        description: "Specialized in advanced trichology, GFC and autologous hair restoration, chemical peeling, and facial rejuvenation.",
+      },
+      {
+        "@type": "Person",
+        name: "Reehal Baig",
+        jobTitle: "Managing Director",
+        worksFor: { "@id": `${SITE_URL}/#clinic` },
+        description: "Managing Director overseeing patient experience, clinical safety operations, and IATAM Academy programs.",
+      },
+    ],
+  };
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
+      />
       {/* Hero */}
       <section className="border-b border-gold/20 py-10 sm:py-14">
         <div className="mx-auto grid max-w-8xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2">
