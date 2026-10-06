@@ -9,7 +9,7 @@
 - **Geo Coordinates:** Latitude 12.9174467, Longitude 77.5931932
 - **Phone / WhatsApp:** +91 95910 47171
 - **Email:** celebrityaestheticcrown@gmail.com
-- **Website:** https://crown-celebrity-aesthetic.com
+- **Website:** https://www.crowncelebrity.com
 - **Hours:** Monday – Sunday, 10:00 AM – 8:00 PM IST (Open 7 days a week)
 - **Financing:** Zero-Cost EMI (0% interest) available on all procedures
 
@@ -22,13 +22,13 @@
 6. **IATAM Academy:** International Academy of Trichology & Aesthetic Medicine certified training courses in PMU, Microblading, and SMP.
 
 ## Key URLs
-- Home: https://crown-celebrity-aesthetic.com/
-- Treatments Directory: https://crown-celebrity-aesthetic.com/treatments
-- About the Practice & Doctors: https://crown-celebrity-aesthetic.com/about
-- IATAM Training Academy: https://crown-celebrity-aesthetic.com/academy
-- PMU Services: https://crown-celebrity-aesthetic.com/pmu-services
-- Clinical Transformations: https://crown-celebrity-aesthetic.com/results
-- Frequently Asked Questions: https://crown-celebrity-aesthetic.com/faq
-- Book Consultation: https://crown-celebrity-aesthetic.com/contact
+- Home: https://www.crowncelebrity.com/
+- Treatments Directory: https://www.crowncelebrity.com/treatments
+- About the Practice & Doctors: https://www.crowncelebrity.com/about
+- IATAM Training Academy: https://www.crowncelebrity.com/academy
+- PMU Services: https://www.crowncelebrity.com/pmu-services
+- Clinical Transformations: https://www.crowncelebrity.com/results
+- Frequently Asked Questions: https://www.crowncelebrity.com/faq
+- Book Consultation: https://www.crowncelebrity.com/contact
 
-For complete, detailed clinical protocol documentation, see [llms-full.txt](https://crown-celebrity-aesthetic.com/llms-full.txt).
+For complete, detailed clinical protocol documentation, see [llms-full.txt](https://www.crowncelebrity.com/llms-full.txt).

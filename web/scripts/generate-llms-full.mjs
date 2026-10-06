@@ -14,7 +14,7 @@ let fullTxt = `# Crown Celebrity Aesthetic — Comprehensive Clinical Knowledge 
 **Location:** 1225, 26th Main Rd, Putlanpalya, Jayanagar 9th Block, Bengaluru, Karnataka 560056, India
 **Geo Coordinates:** 12.9174467 N, 77.5931932 E
 **Phone & WhatsApp:** +91 95910 47171 | **Email:** celebrityaestheticcrown@gmail.com
-**Website:** https://crown-celebrity-aesthetic.com
+**Website:** https://www.crowncelebrity.com
 **Operating Hours:** Monday – Sunday, 10:00 AM – 8:00 PM IST (7 days/week)
 **Accreditations & Standards:** US FDA Approved Laser Platforms, IATAM Certified Protocols, Autologous Sterile Standards
 **Payment & Financing:** Cash, Cards, UPI, Net Banking, Zero-Cost EMI (0% interest)
@@ -53,7 +53,7 @@ while ((match = treatmentRegex.exec(treatmentsContent)) !== null) {
 
   fullTxt += `
 ### ${count}. ${name}
-- **URL:** https://crown-celebrity-aesthetic.com/treatments/${slug}
+- **URL:** https://www.crowncelebrity.com/treatments/${slug}
 - **Category:** ${category.toUpperCase()} (${subCategoryLabel})
 - **Summary:** ${description}
 - **What Is It:** ${whatIsIt}
@@ -73,7 +73,7 @@ The International Academy of Trichology & Aesthetic Medicine (IATAM) Academy ope
 - **Accreditation:** IATAM Certified Professional Credential
 - **Focus Areas:** Hands-on live patient model training in Permanent Makeup (PMU), Eyebrow Microblading, Lip Tinting / Lip Blushing, and Scalp Micropigmentation (SMP).
 - **Format:** Intensive clinical batches with needle calibration, pigment chemistry, aseptic techniques, and business setup mentorship.
-- **Enquiries:** https://crown-celebrity-aesthetic.com/academy or WhatsApp +91 95910 47171
+- **Enquiries:** https://www.crowncelebrity.com/academy or WhatsApp +91 95910 47171
 
 ---
 

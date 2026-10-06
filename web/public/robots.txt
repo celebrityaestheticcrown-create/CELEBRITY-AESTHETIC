@@ -25,4 +25,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://crown-celebrity-aesthetic.com/sitemap.xml
+Sitemap: https://www.crowncelebrity.com/sitemap.xml

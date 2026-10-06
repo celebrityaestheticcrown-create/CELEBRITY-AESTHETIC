@@ -73,7 +73,7 @@ for (const t of treatments) {
 const dynamicRoutes = treatments.map(t => `/treatments/${t.slug}`);
 
 const config = {
-  domain: "https://crown-celebrity-aesthetic.com",
+  domain: "https://www.crowncelebrity.com",
   outputDir: "public",
   excludePages: ["header", "footer", "nav", "partial", "404", "notfound", "admin", "handler", "api", "ajax", "webhook", "privacy", "terms"],
   dynamicRoutes,
